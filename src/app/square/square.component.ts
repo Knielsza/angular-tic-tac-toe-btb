@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { GameService } from "../game.service";
+import { GameService } from '../game.service';
 
 @Component({
   selector: 'app-square',
@@ -13,7 +13,8 @@ import { GameService } from "../game.service";
       <p class="text-grey-darker"> {{ square.state}} </p>
     </div>
    `,
-  styles: [`
+  styles: [
+    `
     .game-square { 
       height: 96%; 
       text-align: center;
@@ -30,27 +31,22 @@ import { GameService } from "../game.service";
 
     .noClick {
       pointer-events: none;
-    }`
-  ]
+    }`,
+  ],
 })
 export class SquareComponent implements OnInit {
+  @Input() square;
 
-  @Input() square; 
+  constructor(public gameService: GameService) {}
 
-  constructor( public gameService: GameService) { }
+  ngOnInit() {}
 
-  ngOnInit() {
-  }
-
-  changePlayer(){ 
-
+  changePlayer() {
     this.gameService.isGameRunning = true;
 
-    if ( this.gameService.isGameRunning && this.square.state === null ){
-      this.square.state =  this.gameService.activePlayer;
-      this.gameService.changePlayerTurn( this.square);
+    if (this.gameService.isGameRunning && this.square.state === null) {
+      this.square.state = this.gameService.activePlayer;
+      this.gameService.changePlayerTurn(this.square);
     }
-    
   }
- 
 }
