@@ -10,6 +10,7 @@
     "@angular/platform-browser": "^7.2.5",
     "@angular/platform-browser-dynamic": "^7.2.5",
     "@angular/router": "^7.2.5",
+    "angular": "^1.8.3",
     "core-js": "^2.6.5",
     "ng-tailwindcss": "^1.2.3",
     "rxjs": "^6.4.0",
