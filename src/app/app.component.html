@@ -1,12 +1,12 @@
 <div class="header">
   <h1
-    class="text-center text-orange"
+    class="text-center text-red"
     *ngIf="gameService.isGameRunning"
     [ngClass]="{ 'text-cyan': gameService.activePlayer == 'O' }"
   >
     RUNDA: {{ gameService.activePlayer }}
   </h1>
-  <h1 class="text-center text-grey-darker" *ngIf="!gameService.isGameRunning">
+  <h1 class="text-center text-red" *ngIf="!gameService.isGameRunning">
     Kółko i krzyżyk
   </h1>
 </div>

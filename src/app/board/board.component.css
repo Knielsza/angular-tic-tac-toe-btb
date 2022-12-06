@@ -4,7 +4,7 @@ section {
   justify-content: space-evenly;
   align-content: space-between;
   align-items: center;
-  margin: 7% auto 50px auto;
+  margin: 7% auto 10px auto;
   flex-wrap: wrap;
 }
 
