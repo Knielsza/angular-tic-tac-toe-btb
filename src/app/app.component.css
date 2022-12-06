@@ -13,3 +13,11 @@ h1 :leave {
 .header {
   margin-top: 100px;
 }
+ng-template {
+  transition: color 0.2s;
+  font-family: 'Zen Dots', cursive;
+}
+ng-template :leave {
+  transition: display 4s;
+  font-family: 'Zen Dots', cursive;
+}
