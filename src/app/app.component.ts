@@ -16,4 +16,3 @@ export class AppComponent  {
     this.gameService.newGame()
   }
 }
-fiut
