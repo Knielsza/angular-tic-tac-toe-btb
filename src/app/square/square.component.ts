@@ -25,8 +25,9 @@ import { GameService } from '../game.service';
     p { 
       display: inline;
       margin: 0px;
-      font-size: 14rem;
+      font-size: 12rem;
       overflow: hidden;
+      font-family: 'Zen Dots', cursive;
     }
 
     .noClick {
