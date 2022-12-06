@@ -5,12 +5,12 @@ import { GameService } from '../game.service';
   selector: 'app-square',
   template: `
     <div 
-      class="game-square rounded-lg border bg-teal-lightest 
+      class="game-square rounded-lg border bg-red-lightest 
       shadow-md " 
       (click)="changePlayer()" 
       [ngClass]="{noClick: gameService.winner} "
     >
-      <p class="text-grey-darker"> {{ square.state}} </p>
+      <p class="text-orange"> {{ square.state}} </p>
     </div>
    `,
   styles: [

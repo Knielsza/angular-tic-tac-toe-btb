@@ -2,7 +2,7 @@
   <h1
     class="text-center text-orange"
     *ngIf="gameService.isGameRunning"
-    [ngClass]="{ 'text-teal': gameService.activePlayer == 'O' }"
+    [ngClass]="{ 'text-cyan': gameService.activePlayer == 'O' }"
   >
     RUNDA: {{ gameService.activePlayer }}
   </h1>
