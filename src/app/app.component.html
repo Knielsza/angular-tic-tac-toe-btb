@@ -11,13 +11,10 @@
   </h1>
 </div>
 <app-board></app-board>
-<h1
-  class="text-center text-red"
-  *ngIf="gameService.winner; then Record; else noRecord"
->
+<h1 class="text-center text-red" *ngIf="gameService.winner">
   GRATULACJE '{{ gameService.activePlayer }}' WYGRAŁY
 </h1>
-<ng-template #noRecord *ngIf="!gameService.isGameRunning"
+<ng-template *ngIf="gameService.winner && gameService.isGameRunning"
   ><p class="text-center text-red">REMIS</p></ng-template
 >
 
